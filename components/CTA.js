@@ -15,7 +15,7 @@ export default function CTA() {
   }, []);
 
   return (
-    <section className="bg-blue-500 text-white text-sm md:text-base">
+    <section className="sticky top-0 z-50 bg-blue-500 text-white text-sm md:text-base">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
