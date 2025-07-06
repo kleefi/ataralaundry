@@ -1,10 +1,8 @@
 "use client";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faWhatsapp,
-  faPhoenixFramework,
-} from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 export default function Contact() {
   return (
@@ -27,13 +25,15 @@ export default function Contact() {
           ></iframe>
         </div>
         <div>
-          <h2 className="text-3xl md:text-3xl font-extrabold text-blue-800 leading-tight">
+          <h2 className="text-3xl md:text-3xl font-extrabold text-blue-800 leading-tight mb-4">
             Alamat Kami:
           </h2>
-          <p className="text-lg">
-            Jln Jaksa No.44, RT.7/RW.5, Kebon Sirih,
-            <br /> Menteng, Central Jakarta City, Jakarta 10340
-          </p>
+          <div className="border-l-4 border-yellow-500 pl-4 mb-4">
+            <p className="text-lg">
+              Jln Jaksa No.44, RT.7/RW.5, Kebon Sirih,
+              <br /> Menteng, Central Jakarta City, Jakarta 10340
+            </p>
+          </div>
 
           <motion.a
             href="tel:+6285694821191"
@@ -46,7 +46,7 @@ export default function Contact() {
               transition={{ repeat: Infinity, duration: 1.2 }}
               className="inline-block mr-2"
             >
-              <FontAwesomeIcon icon={faPhoenixFramework} />
+              <FontAwesomeIcon icon={faPhone} />
             </motion.span>
             Call Us
           </motion.a>

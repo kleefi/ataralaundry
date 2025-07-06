@@ -55,7 +55,7 @@ const features = [
 
 export default function WhyUs() {
   return (
-    <section className="max-w-[1200px] mx-auto py-16">
+    <section className="max-w-[1200px] mx-auto">
       <motion.div
         className="bg-white text-center py-8 px-6 mb-4 rounded-md grid md:grid-cols-4 grid-cols-2 gap-4"
         variants={containerVariants}

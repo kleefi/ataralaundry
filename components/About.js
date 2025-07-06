@@ -1,10 +1,11 @@
 "use client";
-
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 export default function About() {
   return (
-    <section className="flex items-center justify-center py-16 px-6 fade-up show min-h-screen">
+    <section className="flex items-center justify-center py-16 px-6 fade-up show ">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -48,6 +49,22 @@ export default function About() {
               pakaian bersih, harum, tanpa risiko rusak atau tertukar.
             </p>
           </div>
+          <motion.a
+            href="https://wa.me/6285694821191"
+            target="_blank"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-block mt-4 px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-semibold text-lg rounded-full shadow-lg transition"
+          >
+            <motion.span
+              animate={{ scale: [1, 1.1, 1] }}
+              transition={{ repeat: Infinity, duration: 1.2 }}
+              className="inline-block mr-2"
+            >
+              <FontAwesomeIcon icon={faWhatsapp} />
+            </motion.span>
+            Chat via WhatsApp
+          </motion.a>
         </div>
       </motion.div>
     </section>

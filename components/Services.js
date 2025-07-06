@@ -49,10 +49,9 @@ export default function Services() {
       viewport={{ once: true, amount: 0.3 }}
       className="max-w-[1200px] mx-auto py-16 px-4"
     >
-      <h2 className="text-3xl text-center font-extrabold text-blue-800 leading-tight mb-12">
+      <h2 className="border-l-4 border-yellow-500 pl-4 mb-12 flex text-3xl text-center font-extrabold text-blue-800 leading-tigh">
         OUR SERVICES
       </h2>
-
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}
         slidesPerView={1}

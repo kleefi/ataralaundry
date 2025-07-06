@@ -66,12 +66,19 @@ export default function Hero() {
         {/* RIGHT SIDE */}
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            y: [0, -10, 0], // Naik turun
+          }}
           transition={{
-            type: "spring",
-            stiffness: 100,
-            damping: 10,
-            delay: 0.4,
+            opacity: { duration: 0.6, delay: 0.4 },
+            scale: { type: "spring", stiffness: 100, damping: 10 },
+            y: {
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+            },
           }}
           className="flex justify-center md:justify-end"
         >
